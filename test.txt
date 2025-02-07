@@ -1,0 +1,1 @@
+I know the Decorator Pattern and I know HOW it's used in the JAVA.IO package.
