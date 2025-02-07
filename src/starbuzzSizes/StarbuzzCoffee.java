@@ -44,5 +44,10 @@ public class StarbuzzCoffee {
 	 * Think carefully about what objects we are creating and where they get their
 	 * instance variable. Propose an approach that can't create incorrect or 
 	 * misleading results. 
+	 * 
+	 * Issues with setSize():
+	 * 1. Each condiment has its own size variable, so setting size to one doesn't propagate to 
+	 * another one, and sizes become inconsistent
+	 * 2. Resetting a size in the middle of making a beverage doesn't sound like a good idea. 
 	 */
 }
