@@ -11,6 +11,6 @@ public class Milk extends CondimentDecorator {
 	}
 
 	public double cost() {
-		return .10 + beverage.cost();
+		return .10 * getSizeMultiplier() + beverage.cost();
 	}
 }

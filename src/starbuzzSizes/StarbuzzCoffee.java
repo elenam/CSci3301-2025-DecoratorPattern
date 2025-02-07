@@ -24,11 +24,11 @@ public class StarbuzzCoffee {
 				+ " $" + beverage3.cost());
 		
 		Beverage sizeGrande = new DarkRoast(Size.GRANDE);
-		System.out.println(sizeGrande.getSize());
+		//System.out.println(sizeGrande.getSize());
 		sizeGrande = new Milk(sizeGrande);
-		System.out.println(sizeGrande.getSize());
+		//System.out.println(sizeGrande.getSize());
 		sizeGrande = new Whip(sizeGrande);
-		System.out.println(sizeGrande.getSize());
+		//System.out.println(sizeGrande.getSize());
 		System.out.println(sizeGrande.getDescription() 
 				+ " $" + sizeGrande.cost());
 	}

@@ -8,7 +8,7 @@ public abstract class Beverage {
 	protected String description = "Unknown Beverage";
   
 	public String getDescription() {
-		return description;
+		return this.size + " " + this.description;
 	}
 	
 	public Size getSize() {
@@ -16,4 +16,14 @@ public abstract class Beverage {
 	}
  
 	public abstract double cost();
+	
+	protected double getSizeMultiplier() {
+		if (this.size == Size.GRANDE) {
+			return 2.0;
+		}
+		if (this.size == Size.VENTI) {
+			return 1.5;
+		}
+		return 1.0;
+	}
 }

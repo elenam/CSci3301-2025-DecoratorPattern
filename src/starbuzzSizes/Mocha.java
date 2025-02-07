@@ -11,6 +11,7 @@ public class Mocha extends CondimentDecorator {
 	}
  
 	public double cost() {
+		// doesn't adjust cost by size
 		return .20 + beverage.cost();
 	}
 }
