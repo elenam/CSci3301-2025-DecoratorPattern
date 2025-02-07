@@ -1,8 +1,15 @@
 package starbuzzSizes;
 
+import starbuzzSizes.Beverage.Size;
+
 public class Decaf extends Beverage {
+	public Decaf(Size size) {
+		this.size = size;	
+		this.description = "Decaf Coffee";
+	}
+	
 	public Decaf() {
-		description = "Decaf Coffee";
+		this.description = "Decaf Coffee";
 	}
  
 	public double cost() {

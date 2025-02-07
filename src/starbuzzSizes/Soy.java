@@ -3,6 +3,7 @@ package starbuzzSizes;
 public class Soy extends CondimentDecorator {
 	public Soy(Beverage beverage) {
 		this.beverage = beverage;
+		this.size = beverage.size;
 	}
 
 	public String getDescription() {

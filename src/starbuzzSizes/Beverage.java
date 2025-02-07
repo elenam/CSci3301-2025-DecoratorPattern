@@ -10,6 +10,10 @@ public abstract class Beverage {
 	public String getDescription() {
 		return description;
 	}
+	
+	public Size getSize() {
+		return size;
+	}
  
 	public abstract double cost();
 }

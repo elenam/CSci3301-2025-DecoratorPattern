@@ -1,8 +1,13 @@
 package starbuzzSizes;
 
 public class DarkRoast extends Beverage {
+	public DarkRoast(Size size) {
+		this.size = size;
+		this.description = "Dark Roast Coffee";
+	}
+	
 	public DarkRoast() {
-		description = "Dark Roast Coffee";
+		this.description = "Dark Roast Coffee";
 	}
  
 	public double cost() {

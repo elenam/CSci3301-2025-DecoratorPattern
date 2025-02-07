@@ -3,6 +3,7 @@ package starbuzzSizes;
 public class Mocha extends CondimentDecorator {
 	public Mocha(Beverage beverage) {
 		this.beverage = beverage;
+		this.size = beverage.size;
 	}
  
 	public String getDescription() {
