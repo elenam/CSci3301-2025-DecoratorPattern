@@ -14,8 +14,9 @@ public class EncryptionTest {
 	public static void main(String[] args) throws IOException {
 		// text to write:
 		String s = "Hi There! Welcome to my encryption test!";
+		// file where the encryption goes (in top directory of the project):
 		String outFile = "encrypted.txt";
-		OutputStreamWriter out = null;
+		OutputStreamWriter out = null; // create outside the `try/catch` to close in `finally` 
 		try {
 			OutputStream out1 = new FileOutputStream(outFile);
 			//TODO: add EncryptionOutputStream to decorate the FileOutputStream
@@ -32,7 +33,7 @@ public class EncryptionTest {
 				out.close();
 			}
 		}
-		System.out.println();
+		System.out.println("Encryption finished");
 	}
 
 }

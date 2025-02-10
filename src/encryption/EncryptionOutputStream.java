@@ -19,7 +19,11 @@ public class EncryptionOutputStream extends FilterOutputStream {
 	/*
 	 * Takes a character c and encrypts it with the Caesar cipher 
 	 * if it's a letter and leaves it as is if it's not
-	 * TODO: write the actual Caesar cipher encryption 
+	 * TODO: write the actual Caesar cipher encryption.
+	 * Make sure that the result is always a valid letter:
+	 * Turn all letters to 0-25 numbers by subtracting 'a',
+	 * then shift them by the shift value and take the result mod 26,
+	 * then convert them back to a letter.  
 	 */
 	int encrypt(int c) {
 		int a = 'a'; // ASCII code of lower-case 'a'
